@@ -4,11 +4,9 @@
   "description": "Alps Trips dependencies",
   "author": "Luca Lusso",
   "license": "GPL-3.0",
-  "dependencies": {
-  },
-  "scripts": {
-    "build:dev": "ls",
-    "lint:js": "ls",
-    "lint:css": "ls"
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "3"
   }
 }
