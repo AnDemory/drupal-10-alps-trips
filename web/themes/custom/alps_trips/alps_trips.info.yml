@@ -6,7 +6,7 @@ version: VERSION
 libraries:
   - alps_trips/base
   - alps_trips/messages
-  - core/normalize
+  - alps_trips/main
 libraries-extend:
   user/drupal.user:
     - alps_trips/user

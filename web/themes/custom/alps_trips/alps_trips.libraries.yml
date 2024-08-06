@@ -103,3 +103,10 @@ user:
     component:
       css/components/user.css:
         weight: -10
+main:
+  version: VERSION
+  js:
+    build/main.js: {}
+  css:
+    theme:
+      build/styles.css: {}
