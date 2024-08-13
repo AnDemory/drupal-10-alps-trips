@@ -1,0 +1,14 @@
+{% if items %}
+  {% set rendered_items %}
+    {% for item in items %}
+      {{ include('@atoms/menu-item.html.twig', {
+        'title': item.title,
+        'url': item.url,
+        'active': item.in_active_trail,
+      }) }}
+    {% endfor %}
+{% endset %}
+  {{ include('@molecules/menu.html.twig',{
+      'items': rendered_items,
+    }) }}
+{% endif %}

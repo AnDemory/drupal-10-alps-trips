@@ -118,6 +118,7 @@ Now we can rebuild the `styles.css` file using a shortcut of the `start:dev` Yar
     {
       'blocks': content,
       'attributes': attributes.setAttribute('role', 'banner'),
+      'background': true,
     })
 }}
 ```
@@ -143,5 +144,5 @@ Now we can rebuild the `styles.css` file using a shortcut of the `start:dev` Yar
 ## Chapter 15
 
 * Page 301, first paragraph should be:
-  
+
   **REpresentational State Transfer (REST)** is an architectural approach to constructing web services. Embracing the simplicity of REST and leveraging the capabilities inherent to the internet's **Hypertext Transfer Protocol (HTTP)**, it accomplishes its goals by building upon existing systems and features rather than introducing novel standards, frameworks, or technologies.
