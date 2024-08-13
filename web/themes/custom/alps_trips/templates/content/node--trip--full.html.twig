@@ -1,0 +1,32 @@
+{% set details %}
+  {{ include('@atoms/details.html.twig', {
+    'first': content.field_duration,
+    'second': content.field_level,
+  }) }}
+{% endset %}
+{% set table %}
+  {{ include('@atoms/table.html.twig', {
+    'headers': ['Origin'|t, 'Destination'|t],
+    'rows': [
+      content.field_origin,
+      content.field_destination
+    ],
+  }) }}
+{% endset %}
+{{ include('@organisms/trip-full.html.twig', {
+  'picture': content.field_picture,
+  'detail': details,
+  'body': content.body,
+  'trip': table,
+  'map': content.field_lat_lng,
+  'attributes': attributes,
+}) }}
+{{ content|without(
+  'body',
+  'field_destination',
+  'field_duration',
+  'field_lat_lng',
+  'field_level',
+  'field_origin',
+  'field_picture',
+) }}
