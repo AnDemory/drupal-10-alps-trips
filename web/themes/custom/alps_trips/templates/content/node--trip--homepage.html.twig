@@ -1,0 +1,21 @@
+{% set details %}
+  {{ include('@atoms/details.html.twig', {
+    'first': content.field_duration,
+    'second': content.field_level,
+  }) }}
+{% endset %}
+{{ include('@molecules/media.html.twig', {
+  'picture': content.field_picture,
+  'title': label,
+  'detail': details,
+  'body': content.body,
+  'attributes': attributes,
+}) }}
+{{ content|without(
+  'body',
+  'field_destination',
+  'field_duration',
+  'field_level',
+  'field_origin',
+  'field_picture',
+) }}
