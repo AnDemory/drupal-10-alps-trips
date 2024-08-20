@@ -64,3 +64,12 @@ function alps_trips_theme_suggestions_block_alter(array &$suggestions, array $va
     $suggestions[] = 'block__type_' . $block_bundle;
   }
 }
+
+
+function alps_trips_theme(): array {
+  return [
+    'user_login_form' => [
+      'render element' => 'form',
+      'template' => 'form/user-login-form',
+    ],
+]; }

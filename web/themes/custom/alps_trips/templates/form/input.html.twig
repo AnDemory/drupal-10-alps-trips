@@ -10,4 +10,7 @@
  * @see template_preprocess_input()
  */
 #}
-<input{{ attributes }} />{{ children }}
+{{ include('@atoms/input.html.twig', {
+  attributes: attributes,
+  children: children,
+}) }}
