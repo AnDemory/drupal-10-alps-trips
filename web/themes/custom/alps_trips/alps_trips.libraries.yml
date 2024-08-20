@@ -118,8 +118,7 @@ alpine:
     url: https://github.com/alpinejs/alpine/blob/main/LICENSE.md
     gpl-compatible: true
   js:
-    https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.
-  min.js:
+    https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js:
       { type: external, minified: true }
 swiper:
   remote: https://swiperjs.com
